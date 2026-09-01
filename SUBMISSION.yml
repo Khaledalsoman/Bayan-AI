@@ -4,12 +4,12 @@ version: submission-v1.0
 
 student:
   name: "Khaled Alsoman"
-  email: "shiroy4shaa@gmail.com"
+  email: "khaledalsoman@gmail.com"
 
 repository:
   url: "https://github.com/Khaledalsoman/Bayan-AI"
   tag: "submission-v1.0"
-  commit: "(add final commit hash — git rev-parse HEAD)"
+  commit: "044353e082f8118438429234cf49ab49594261b7"
   branch: main
   visibility: public
 
