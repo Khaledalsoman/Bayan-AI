@@ -141,6 +141,6 @@ This project was developed as part of the **SDA-AIE-211 — Natural Language Pro
 
 نُفِّذ هذا المشروع ضمن برنامج SDA-AIE-211 — Natural Language Processing with Transformers، بإعداد وتقديم المدربة ميعاد المري، ضمن برامج أكاديمية سدايا.
 
-**Student / المتدرب:** خالد *(أضف اسمك الكامل)*  
-**Repository:** https://github.com/[YOUR-USERNAME]/Bayan-AI  
+**Student / المتدرب:** خالد علي القحطاني)*  
+**Repository:** https://github.com/Khaledalsoman/Bayan-AI  
 **Submission Tag:** `submission-v1.0`
