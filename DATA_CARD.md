@@ -37,9 +37,9 @@ Synthetic bilingual (Arabic/English) citizen-feedback texts created specifically
 
 | Split | Records | Notes |
 |---|---|---|
-| train | *(add count)* | Used for fine-tuning |
-| validation | *(add count)* | Hyper-parameter tuning |
-| test | **frozen** | Evaluation only — never touched during training |
+| train | 24 | Used for fine-tuning |
+| validation | 8 | Hyper-parameter tuning |
+| test | 8 | **frozen** | Evaluation only — never touched during training |
 
 > ⚠️ The test split is frozen. It was not used during any training or threshold tuning step.
 
