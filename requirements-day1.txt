@@ -1,0 +1,5 @@
+# Day 1 — Text Processing & Tokenisation
+# SDA-AIE-211 Bayan Capstone
+transformers==5.15.1
+tokenizers==0.22.2
+spacy==3.8.7

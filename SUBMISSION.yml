@@ -1,0 +1,55 @@
+project: Bayan
+course: SDA-AIE-211
+version: submission-v1.0
+
+student:
+  name: "Khaled Alsoman"
+  email: "shiroy4shaa@gmail.com"
+
+repository:
+  url: "https://github.com/Khaledalsoman/Bayan-AI"
+  tag: "submission-v1.0"
+  commit: "(add final commit hash — git rev-parse HEAD)"
+  branch: main
+  visibility: public
+
+submission_date: "2026-09-01"
+environment: "Google Colab Free — CPU"
+
+deliverables:
+  notebook: "bayan_capstone.ipynb"
+  evaluation_report: "EVALUATION_REPORT.md"
+  data_card: "DATA_CARD.md"
+  model_card: "MODEL_CARD.md"
+  benchmarks: "BENCHMARKS.md"
+  decisions: "DECISIONS.md"
+  project_summary: "PROJECT_SUMMARY.json"
+
+technical_gates:
+  T1_text_processing: true
+  T2_tokenizer_literacy: true
+  T3_classification: true
+  T4_ner: true
+  T5_extractive_qa: true
+  T6_arabic_pipeline: true
+  T7_semantic_search: true
+  T8_behavioural_evaluation: true
+  T9_error_analysis: true
+  T10_optimisation_serving: true
+  T11_fastapi: true
+  T12_measured_extension: true
+
+administrative_gates:
+  A1_clear_description: true
+  A2_professional_readme: true
+  A3_technical_documentation: true
+  A4_git_best_practices: true
+  A5_programme_attribution: true
+  A6_sdaia_academy_link: true
+  A7_public_repo: true
+  A8_integrity_privacy: true
+
+declaration: >
+  I confirm that all results are from my own notebook runs, I understand
+  the code and decisions, and I have not uploaded sensitive data or
+  attributed reference outputs to my project.

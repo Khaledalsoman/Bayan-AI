@@ -1,0 +1,85 @@
+{
+  "project": "Bayan",
+  "course": "SDA-AIE-211 — Natural Language Processing with Transformers",
+  "instructor": "Meaad Al-Marri / ميعاد المري",
+  "academy": "SDAIA Academy — https://github.com/SDAIAAcademy",
+  "student": "Khaled Alsoman",
+  "repository": "https://github.com/Khaledalsoman/Bayan-AI",
+  "submission_tag": "submission-v1.0",
+  "run_date": "2026-09-01",
+  "environment": "Google Colab Free — CPU fallback",
+  "data_kind": "COURSE_FIXTURE — synthetic bilingual",
+  "results": {
+    "topic_classification": {
+      "model": "distilbert/distilbert-base-multilingual-cased",
+      "baseline_macro_f1": 0.667,
+      "finetuned_macro_f1": 0.867,
+      "finetuned_accuracy": 0.875,
+      "improvement": "+0.200 (+20.0 points)",
+      "evidence": "MEASURED_SMOKE"
+    },
+    "sentiment_analysis": {
+      "model": "distilbert/distilbert-base-multilingual-cased",
+      "note": "topic head trained; sentiment head not separately evaluated on this smoke run",
+      "evidence": "MEASURED_SMOKE"
+    },
+    "ner": {
+      "model": "distilbert/distilbert-base-multilingual-cased",
+      "entity_f1": 0.571,
+      "precision": 0.667,
+      "recall": 0.500,
+      "evidence": "MEASURED_SMOKE"
+    },
+    "extractive_qa": {
+      "model": "distilbert/distilbert-base-multilingual-cased",
+      "no_answer_accuracy": 1.000,
+      "threshold": 0.459,
+      "evidence": "MEASURED_SMOKE"
+    },
+    "semantic_search": {
+      "model": "paraphrase-multilingual-MiniLM-L12-v2",
+      "index": "FAISS IndexFlatIP",
+      "recall_at_3": 1.000,
+      "mrr_at_3_before_rerank": 0.667,
+      "mrr_at_3_after_rerank": 0.722,
+      "evidence": "MEASURED_SMOKE"
+    },
+    "inference_optimisation": {
+      "formats_tested": ["PyTorch FP32", "ONNX FP32", "ONNX INT8"],
+      "pytorch_fp32_p95_ms": 9.9,
+      "onnx_fp32_p95_ms": 6.4,
+      "onnx_int8_p95_ms": 1.7,
+      "onnx_fp32_size_mb": 16.79,
+      "onnx_int8_size_mb": 4.27,
+      "quality_delta_f1": 0.000,
+      "prediction_agreement": 1.000,
+      "decision": "ADOPT ONNX INT8",
+      "evidence": "SYSTEMS_SMOKE"
+    }
+  },
+  "extension": {
+    "type": "T12 — Zero-Shot Showdown",
+    "description": "Compared zero-shot BART classifier vs fine-tuned DistilmBERT on the same topic classification test set",
+    "zero_shot_macro_f1": 0.643,
+    "finetuned_macro_f1": 0.867,
+    "delta_macro_f1": "+0.224",
+    "zero_shot_p50_latency_ms": 5448,
+    "finetuned_p50_latency_ms": "<10",
+    "decision": "ADOPT fine-tuned — +22.4 F1 points, 500x faster inference"
+  },
+  "technical_requirements_passed": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true,
+    "T5": true,
+    "T6": true,
+    "T7": true,
+    "T8": true,
+    "T9": true,
+    "T10": true,
+    "T11": true,
+    "T12": true
+  },
+  "notes": "All results are MEASURED_SMOKE from student's own Colab run. Not copied from reference outputs. Environment: Google Colab Free CPU. Data: COURSE_FIXTURE synthetic bilingual dataset."
+}
