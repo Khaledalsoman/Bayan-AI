@@ -9,8 +9,8 @@
 | **Source** | Course-provided synthetic data — SDA-AIE-211 |
 | **Owner** | ميعاد المري — Meaad Al-Marri / SDAIA Academy |
 | **License** | Course use only — educational, non-commercial |
-| **Download date** | *(add date you downloaded the starter zip)* |
-| **SHA-256 (sample CSV)** | *(run: `sha256sum data/sample/bayan_sample.csv`)* |
+| **Download date** | 2026-09-01 |
+| **SHA-256 (sample CSV)** | N/A — dataset loaded at runtime from course URL; no local file stored |
 
 ---
 
