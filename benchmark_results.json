@@ -1,0 +1,17 @@
+{
+  "environment": "SYSTEMS_SMOKE",
+  "date": "2026-09-01",
+  "hardware": "Google Colab CPU",
+  "workload": {
+    "rows": 8,
+    "languages": ["ar", "en"],
+    "sha256": "1d1d1c3bef8a582931f6a1c1803671e8fe194fc36ae59cdc4f4feca9fc4d6785"
+  },
+  "warmup": 5,
+  "repetitions": 30,
+  "pytorch_fp32": {"p95_ms": 9.908, "size_mb": 16.732},
+  "onnx_fp32": {"p95_ms": 6.418, "size_mb": 16.788, "max_abs_logits_diff": 1.4901161193847656e-07, "prediction_agreement": 1.0},
+  "onnx_int8": {"p95_ms": 1.731, "size_mb": 4.272, "prediction_agreement": 1.0},
+  "decision": "ADOPT ONNX INT8",
+  "rationale": "75% size reduction, 5x latency improvement, zero quality loss on smoke workload"
+}
