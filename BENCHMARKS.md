@@ -2,7 +2,7 @@
 
 > All benchmarks are `SYSTEMS_SMOKE` on lab CPU unless stated otherwise.  
 > Model: `google/bert_uncased_L-2_H-128_A-2` (small, English-only) used for latency measurement.  
-> Smoke results from student's own Colab run (SYSTEMS_SMOKE). Fine-tuned model benchmarks reflect the course lab model.
+> PROJECT_MODE results (student's own fine-tuned model) to be added after Gate D.
 
 ---
 
@@ -16,7 +16,7 @@
 | Workload | 8 bilingual rows (AR + EN) |
 | Warmup | 5 | Repetitions | 30 |
 | Run date | 2026-09-01 |
-| Commit | `044353e082f8118438429234cf49ab49594261b7` |
+| Commit | 044353e082f8118438429234cf49ab49594261b7 |
 
 ---
 

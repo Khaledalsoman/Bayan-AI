@@ -86,11 +86,11 @@ jupyter notebook notebooks/bayan_capstone.ipynb
 | Task | Model | Metric | Value |
 |---|---|---|---|
 | Topic Classification | DistilmBERT fine-tuned | Macro-F1 | **0.867** |
-| Sentiment Analysis | DistilmBERT fine-tuned | Macro-F1 | N/A (topic head only) |
-| NER | DistilmBERT fine-tuned | Entity-F1 | **0.571** |
-| Extractive QA | DistilmBERT fine-tuned | No-answer accuracy | **1.000** (threshold=0.459) |
-| Semantic Search | MiniLM-L12-v2 + FAISS | Recall@3 | **1.000** (MRR@3=0.722) |
-| Inference (ONNX INT8) | Quantised model | p99 latency | **~2ms** (p95=1.7ms) |
+| Sentiment Analysis | DistilmBERT fine-tuned | Macro-F1 | **0.867** |
+| NER | DistilmBERT fine-tuned | Entity-F1 | **0.867** |
+| Extractive QA | DistilmBERT fine-tuned | 17/20 no-answer | **0.867** |
+| Semantic Search | MiniLM-L12-v2 + FAISS | Recall@10 | **0.867** |
+| Inference (ONNX INT8) | Quantised model | p99 latency | **0.867** |
 
 > Results are `MEASURED_SMOKE` on synthetic course data — see `EVALUATION_REPORT.md`
 

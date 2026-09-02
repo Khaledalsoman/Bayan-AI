@@ -15,6 +15,10 @@ A log of key technical decisions made during the project, with evidence and rati
 
 **Rationale:** mBERT-family tokenisers handle Arabic script natively with reasonable fertility. The multilingual vocab covers both AR and EN without language-specific tokenisers.
 
+
+**Why WordPiece splits Arabic the way it does:**
+Arabic is a morphologically rich, agglutinative language — a single word can encode a verb, subject, object, and preposition that English expresses as 4–5 separate tokens. WordPiece was trained primarily on English Wikipedia, so it lacks many Arabic root patterns in its 119k vocabulary. When the tokeniser encounters an unseen Arabic word it falls back to character-level `##` subwords, producing fertility of 1.5–2.0 tokens/word vs 1.0–1.17 for English. Arabic diacritics and tatweel (ـ) generate extra tokens if not pre-removed — which is why `normalise_arabic_record()` strips them before tokenisation (Section 1, notebook).
+
 **Trade-off:** Higher fertility on Arabic than English; longer texts may be truncated.
 
 ---

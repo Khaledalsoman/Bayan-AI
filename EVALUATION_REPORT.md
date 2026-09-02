@@ -13,7 +13,7 @@
 | Platform | Google Colab Free |
 | Python | 3.11.x |
 | Run date | 2026-09-01 |
-| Notebook commit | `044353e082f8118438429234cf49ab49594261b7` |
+| Notebook commit | 044353e082f8118438429234cf49ab49594261b7 |
 | Data kind | `COURSE_FIXTURE` — synthetic, bilingual |
 
 ---
